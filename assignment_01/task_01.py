@@ -7,7 +7,9 @@
 import messages
 import functions
 
-inp = functions.validateNumInput(messages.msg1, messages.msg2, messages.msg5, 3)
+digits = 3
+msg1 = f"Введите {digits}-значное число: "
+inp = functions.validateNumInput(msg1, messages.msg2, messages.msg3, digits)
 number = [int(i) for i in str(inp)]
 sum = 0
 for i in number:

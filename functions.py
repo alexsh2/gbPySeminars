@@ -1,11 +1,11 @@
-def validateNumInput(msg1, msg2, msg5='', n=0):
+def validateNumInput(str1, str2, str3='', n=0):
     while True:
         try:
-            num = int(input(msg1))
+            num = int(input(str1))
         except ValueError:
-            print(msg2)
+            print(str2)
         else:
             if (n != 0 and len(str(num)) == n) or n == 0:
                 return num
             else:
-                print(msg5)
+                print(str3)
