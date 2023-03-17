@@ -20,3 +20,14 @@ def validateYesNo():
             return False
         else:
             print("Введите \"да\", или \"нет\": ")
+
+
+
+def detectRuEn(c):
+    if (c >= "а" and c <= "я") or (c >= "А" and c <= "Я"):
+        return 'ru'
+    elif (c >= "a" and c <= "z") or (c >= "A" and c <= "Z"):
+        return 'en'
+    else:
+        return ''
+        
