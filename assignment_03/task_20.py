@@ -51,37 +51,45 @@ count = 0
 
 while lang != '':
     if lang == 'ru':
-        for i in range(len(word)):
-            if word[i].upper() in dictRu[1]:
-                count += 1
-            elif word[i].upper() in dictRu[2]:
-                count += 2
-            elif word[i].upper() in dictRu[3]:
-                count += 3
-            elif word[i].upper() in dictRu[4]:
-                count += 4
-            elif word[i].upper() in dictRu[5]:
-                count += 5
-            elif word[i].upper() in dictRu[8]:
-                count += 8
-            elif word[i].upper() in dictRu[10]:
-                count += 10
+        for i in word.upper():
+            for j in dictRu:
+                if i in dictRu[j]:
+                    count += j
+        # for i in range(len(word)):
+        #     if word[i].upper() in dictRu[1]:
+        #         count += 1
+        #     elif word[i].upper() in dictRu[2]:
+        #         count += 2
+        #     elif word[i].upper() in dictRu[3]:
+        #         count += 3
+        #     elif word[i].upper() in dictRu[4]:
+        #         count += 4
+        #     elif word[i].upper() in dictRu[5]:
+        #         count += 5
+        #     elif word[i].upper() in dictRu[8]:
+        #         count += 8
+        #     elif word[i].upper() in dictRu[10]:
+        #         count += 10
     elif lang == 'en':
-        for i in range(len(word)):
-            if word[i].upper() in dictEn[1]:
-                count += 1
-            elif word[i].upper() in dictEn[2]:
-                count += 2
-            elif word[i].upper() in dictEn[3]:
-                count += 3
-            elif word[i].upper() in dictEn[4]:
-                count += 4
-            elif word[i].upper() in dictEn[5]:
-                count += 5
-            elif word[i].upper() in dictEn[8]:
-                count += 8
-            elif word[i].upper() in dictEn[10]:
-                count += 10
+        for i in word.upper():
+            for j in dictRu:
+                if i in dictRu[j]:
+                    count += j
+        # for i in range(len(word)):
+        #     if word[i].upper() in dictEn[1]:
+        #         count += 1
+        #     elif word[i].upper() in dictEn[2]:
+        #         count += 2
+        #     elif word[i].upper() in dictEn[3]:
+        #         count += 3
+        #     elif word[i].upper() in dictEn[4]:
+        #         count += 4
+        #     elif word[i].upper() in dictEn[5]:
+        #         count += 5
+        #     elif word[i].upper() in dictEn[8]:
+        #         count += 8
+        #     elif word[i].upper() in dictEn[10]:
+        #         count += 10
     print(f"Введённое слово \"{word}\" стоит {count} тугриков.")
     break
 if lang == '':
