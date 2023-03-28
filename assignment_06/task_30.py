@@ -10,9 +10,7 @@ term = functions.validateNumInput("Введите первый элемент п
 diff = functions.validateNumInput("Введите шаг прогрессии: ", messages.msg2)
 num = functions.validateNumInput("Введите количество элементов прогрессии: ", messages.msg2)
 ap = list()
-count = 0
 for i in range(num):
-    ap.append(term + (count) * diff)
-    count += 1
+    ap.append(term + i * diff)
 
 print(f"\nАрифметическая прогрессия числа {term} с шагом {diff}:\n{ap}")
