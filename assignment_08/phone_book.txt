@@ -1,0 +1,9 @@
+id,  lastname,  firstname,  secondname,  phone 
+2,  Petrov,  Gena,  Mefodievich,  76541233377 
+3,  Ivanov,  Evlampii,  Nikanorovich,  1234567890 
+4,  Ivanov,  Illarion,  Mikhailovicn,  78887653530 
+6,  Zibrov,  Frunzik,  Stepanovich,  89996782334 
+7,  Petrov,  Vladimir,  Sergeevich,  89013451212 
+8,  Petrov,  kuzma,  Kuzmich, 98014567633
+10,  Stepanov,  Igor,  Petrovich,  89771902030 
+11,  Stepanov,  Sergei,  Igorevich,  73582677887 
